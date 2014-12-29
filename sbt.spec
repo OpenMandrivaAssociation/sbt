@@ -1,3 +1,4 @@
+%{?_javapackages_macros:%_javapackages_macros}
 # doing a bootstrap build from public sbt binaries
 # bootstrap exception is here:  https://fedorahosted.org/fpc/ticket/389
 # meeting minutes with vote are here:  http://meetbot.fedoraproject.org/fedora-meeting-1/2014-02-13/fpc.2014-02-13-17.00.html
