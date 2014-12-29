@@ -394,6 +394,8 @@ sed -i -e '/% "test"/d' project/Util.scala
 
 cp %{SOURCE16} .
 cp %{SOURCE15} .
+sed -i 's#/usr/bin/env python#/usr/bin/env python2#' climbing-nemesis.py
+
 chmod 755 climbing-nemesis.py
 
 cp %{SOURCE17} .
