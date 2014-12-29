@@ -2,7 +2,7 @@
 # bootstrap exception is here:  https://fedorahosted.org/fpc/ticket/389
 # meeting minutes with vote are here:  http://meetbot.fedoraproject.org/fedora-meeting-1/2014-02-13/fpc.2014-02-13-17.00.html
 
-%global do_bootstrap 0
+%global do_bootstrap 1
 
 # build non-bootstrap packages with tests, cross-referenced sources, etc
 %global do_proper 0
@@ -24,10 +24,10 @@
 %global installed_ivy_local %{_datadir}/%{name}/%{ivy_local_dir}
 
 %global generic_ivy_artifact() %{1}/%{2}/%{3}/%{4}/jars/%{5}.jar
-%global generic_ivy_descriptor() %{1}/%{2}/%{3}/%{4}/ivys/ivy.xml#/%{5}-%{4}-ivy.xml
+%global generic_ivy_descriptor() %{1}/%{2}/%{3}/%{4}/ivys/%{5}-%{4}-ivy.xml
 
 %global sbt_ivy_artifact() %{typesafe_repo}/org.scala-sbt/%{1}/%{sbt_bootstrap_version}/jars/%{1}.jar
-%global sbt_ivy_descriptor() %{typesafe_repo}/org.scala-sbt/%{1}/%{sbt_bootstrap_version}/ivys/ivy.xml#/%{1}-%{sbt_bootstrap_version}-ivy.xml
+%global sbt_ivy_descriptor() %{typesafe_repo}/org.scala-sbt/%{1}/%{sbt_bootstrap_version}/ivys/%{1}-%{sbt_bootstrap_version}-ivy.xml
 
 %global sbt_ghpages_version 0.5.1
 %global sbt_git_version 0.6.3
@@ -49,8 +49,9 @@
 
 Name:		sbt
 Version:	%{sbt_version}
-Release:	%{pkg_rel}%{?dist}
+Release:	%{pkg_rel}.1
 Summary:	The simple build tool for Scala and Java projects
+Group:		Development/Java
 
 BuildArch:	noarch
 
