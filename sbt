@@ -1,10 +1,6 @@
 #!/bin/sh
 
-if \[ $(rpm -q --queryformat '%{version}' fedora-release) -ge 21 \] ; then
 export JLINE=jline
-else
-export JLINE=jline2
-fi
 
 export SBT_BOOT_DIR=${SBT_BOOT_DIR:-/usr/share/sbt/boot}
 export SBT_IVY_DIR=${SBT_IVY_DIR:-/usr/share/sbt/ivy-local}

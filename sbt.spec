@@ -50,7 +50,7 @@
 
 Name:		sbt
 Version:	%{sbt_version}
-Release:	%{pkg_rel}.1
+Release:	%{pkg_rel}.2
 Summary:	The simple build tool for Scala and Java projects
 Group:		Development/Java
 
