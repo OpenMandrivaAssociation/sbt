@@ -363,9 +363,9 @@ BuildRequires:	test-interface = %{testinterface_version}
 Requires:	sbinary = %{sbinary_version}
 Requires:	test-interface = %{testinterface_version}
 
-BuildRequires:	mvn(org.scala-sbt:sbt)
-
 %if !%{do_bootstrap}
+
+BuildRequires:  mvn(org.scala-sbt:sbt)
 
 %if %{do_proper}
 BuildRequires:	sbt-ghpages = %{sbt_ghpages_version}
