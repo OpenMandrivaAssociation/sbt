@@ -363,7 +363,7 @@ BuildRequires:	test-interface = %{testinterface_version}
 Requires:	sbinary = %{sbinary_version}
 Requires:	test-interface = %{testinterface_version}
 
-BuildRequires:	sbt = %{sbt_bootstrap_version}
+BuildRequires:	sbt
 
 %if !%{do_bootstrap}
 
