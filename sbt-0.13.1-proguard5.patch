@@ -1,0 +1,10 @@
+--- project/Proguard.scala.orgi	2014-12-30 01:03:15.949921621 +0000
++++ project/Proguard.scala	2014-12-30 01:03:48.198786743 +0000
+@@ -104,7 +104,6 @@
+ 		log.debug("\tOther jars:\n\t" + otherJars.mkString("\n\t"))
+ 
+ 		((withJar(ivyJars.toSeq, "Ivy") + excludeString(excludeIvyResources)) ::
+-		(withJar(libraryJar, "Scala library") + libraryFilter) ::
+ 		otherJars.map(jar => mkpath(jar) + generalFilter).toList) map { "-injars " + _ }
+ 	}
+ 

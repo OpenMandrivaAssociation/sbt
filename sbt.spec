@@ -8,7 +8,7 @@
 # build non-bootstrap packages with tests, cross-referenced sources, etc
 %global do_proper 0
 %global pkg_rel 5
-%global scala_version 2.10.3
+%global scala_version 2.10.4
 %global scala_short_version 2.10
 %global sbt_bootstrap_version 0.13.1
 %global sbt_major 0
@@ -68,7 +68,10 @@ Patch1:	sbt-0.13.1-RC3-release-scala.patch
 Patch2:	sbt-0.13.1-ivy-2.3.0.patch
 Patch3:	sbt-0.13.1-ivy-docs.patch
 Patch4:		sbt-0.13.1-sxr.patch
+# cb - proguard 5 doesnt like scala-compiler being in twice
+Patch5: sbt-0.13.1-proguard5.patch
 
+Source1000:     sbt.rpmlintrc
 # sbt-ghpages plugin
 Source1:	https://github.com/sbt/sbt-ghpages/archive/v%{sbt_ghpages_version}.tar.gz
 
@@ -389,6 +392,7 @@ sbt is the simple build tool for Scala and Java projects.
 %if !%{do_proper}
 %patch4 -p1
 %endif
+%patch5 -p0
 
 sed -i -e '/% "test"/d' project/Util.scala
 
@@ -416,8 +420,9 @@ for props in rpmbuild-sbt.boot.properties sbt.boot.properties ; do
     sed -i -e 's/FEDORA_SBT_VERSION/%{sbt_version}/g' $props
 done
 
-sed -i -e 's/["]2[.]10[.]2["]/\"2.10.3\"/g' $(find . -name \*.sbt) $(find . -name \*.xml)
-sed -i -e 's/["]2[.]10[.]2-RC2["]/\"2.10.3\"/g' $(find . -name \*.sbt)
+sed -i -e 's/["]2[.]10[.]3["]/\"2.10.4\"/g' $(find . -name \*.sbt) $(find . -name \*.xml)
+sed -i -e 's/["]2[.]10[.]2-RC2["]/\"2.10.4\"/g' $(find . -name \*.sbt)
+sed -i -e 's/["]2[.]10[.]3["]/\"2.10.4\"/g' project/Sbt.scala
 
 sed -i -e 's/0.13.0/%{sbt_bootstrap_version}/g' project/build.properties
 
@@ -440,15 +445,10 @@ sed -i -e 's/0.13.0/%{sbt_bootstrap_version}/g' project/build.properties
 ./climbing-nemesis.py org.scala-lang scala-reflect %{ivy_local_dir} --version %{scala_version}
 
 # fake on F19
-%if 0%{?fedora} >= 21
 ./climbing-nemesis.py jline jline %{ivy_local_dir} --version 2.11
 ./climbing-nemesis.py org.fusesource.jansi jansi %{ivy_local_dir} --version 1.9
 ./climbing-nemesis.py org.fusesource.jansi jansi-native %{ivy_local_dir} --version 1.5
 ./climbing-nemesis.py org.fusesource.hawtjni hawtjni-runtime %{ivy_local_dir} --version 1.8
-%else
-./climbing-nemesis.py jline jline %{ivy_local_dir} --version 2.11 --jarfile %{_javadir}/jline2-2.10.jar
-./climbing-nemesis.py org.fusesource.jansi jansi %{ivy_local_dir} --version 1.9
-%endif
 
 %if %{do_bootstrap}
 # we need to use the bundled ivy in the bootstrap build because 2.3.0
@@ -582,7 +582,7 @@ done
 %endif
 
 # remove any references to Scala 2.10.2
-sed -i -e 's/["]2[.]10[.]2["]/\"2.10.3\"/g' $(find . -name \*.xml)
+sed -i -e 's/["]2[.]10[.]3["]/\"2.10.4\"/g' $(find . -name \*.xml)
 
 # better not to try and compile the docs project
 rm -f project/Docs.scala
