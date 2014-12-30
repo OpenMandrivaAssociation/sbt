@@ -363,8 +363,9 @@ BuildRequires:	test-interface = %{testinterface_version}
 Requires:	sbinary = %{sbinary_version}
 Requires:	test-interface = %{testinterface_version}
 
-%if !%{do_bootstrap}
 BuildRequires:	sbt = %{sbt_bootstrap_version}
+
+%if !%{do_bootstrap}
 
 %if %{do_proper}
 BuildRequires:	sbt-ghpages = %{sbt_ghpages_version}
