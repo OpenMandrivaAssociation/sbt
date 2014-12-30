@@ -302,15 +302,15 @@ Source81:	http://oss.sonatype.org/content/repositories/releases/net/databinder/d
 
 # precompiled (need only for bootstrapping)
 
-Source82:	http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/precompiled-2_8_2/%{sbt_bootstrap_version}/jars/compiler-interface-bin.jar#/compiler-interface-bin-2_8_2.jar
+Source82:	http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/precompiled-2_8_2/%{sbt_bootstrap_version}/jars/compiler-interface-bin-2_8_2.jar
 
 Source182:	%sbt_ivy_descriptor precompiled-2_8_2
 
-Source83:	http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/precompiled-2_9_2/%{sbt_bootstrap_version}/jars/compiler-interface-bin.jar#/compiler-interface-bin-2_9_2.jar
+Source83:	http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/precompiled-2_9_2/%{sbt_bootstrap_version}/jars/compiler-interface-bin-2_9_2.jar
 
 Source183:	%sbt_ivy_descriptor precompiled-2_9_2
 
-Source84:	http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/precompiled-2_9_3/%{sbt_bootstrap_version}/jars/compiler-interface-bin.jar#/compiler-interface-bin-2_9_3.jar
+Source84:	http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/precompiled-2_9_3/%{sbt_bootstrap_version}/jars/compiler-interface-bin-2_9_3.jar
 
 Source184:	%sbt_ivy_descriptor precompiled-2_9_3
 

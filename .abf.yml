@@ -2,55 +2,101 @@ sources:
   0.6.2.tar.gz: 0abce7993c4ddaa434959b48bbd13bbcc4845b67
   1.11.0.tar.gz: e224b1ddd3e060d2565c009f3c66fb3259d8c77e
   SPECS2-1.12.3.tar.gz: 695ce8fd7d78304f2e0cb5511b22dfdd0037e038
+  actions-0.13.1-ivy.xml: 4f799c7eb950d8c24fba43619fe7fc081ea4cd44
   actions.jar: d5b11d6ab4b9a1b69c79184da631f69be846af49
+  api-0.13.1-ivy.xml: 06929ca874159c5576b5ed3fb3af82907c2ff784
   api.jar: 6fde85621e4d3b167ac58227ce805b645be8fdad
+  apply-macro-0.13.1-ivy.xml: 580595fda7836fa90724769b775c743e371ab4f9
   apply-macro.jar: 73715c8bd5a305311abc122c4d59cd227348fa01
+  cache-0.13.1-ivy.xml: e8d337be6986f0d83c4fd37bbb2be2f9e8dd3eaa
   cache.jar: 966b490896f4550ed1196de74777912e79f298ae
+  classfile-0.13.1-ivy.xml: 99282df155ae2e61622c57016bf2d0977c5d1cc2
   classfile.jar: e83d505e919601fb9b9d7430c20a37042b142824
+  classpath-0.13.1-ivy.xml: 01a246e2d8afb627a4915c4b2db5774fbc3aa109
   classpath.jar: e468b3427fafaa6c6fdcc51253bfaa5f93895a84
+  collections-0.13.1-ivy.xml: 5e4f62308089f9a65f5719e7afa89a01d2e254eb
   collections.jar: 4976b296defef356e0e2a50b2297546aba652ec2
+  command-0.13.1-ivy.xml: 41bfefb9fb8ff0ed51c617d89ded9db36f91f702
   command.jar: bac8f5902e41d9b1aa541e55d3c3d86588fc3fc8
+  compile-0.13.1-ivy.xml: d20ea685d663cb1745a38f3ff0b7e9d83b359b15
   compile.jar: c875acde23674a0c8cea6cba6f03b6075ce71847
+  compiler-integration-0.13.1-ivy.xml: 05905ce3038132867783f3cf9e51dfae3eae04f0
   compiler-integration.jar: dc5a2e7ac6363a749dde3fb04834de1a659964ee
+  compiler-interface-bin-0.13.1-ivy.xml: 95595c711d7cc8bfd983ce07b1667e95a3ec5e74
+  compiler-interface-bin-2_8_2.jar: 61f02ae34991742bd68a4fe18d2f4cf01e111f94
+  compiler-interface-bin-2_9_2.jar: 8d42d9d76fffddc84446eab3b9de13eca02705e0
+  compiler-interface-bin-2_9_3.jar: e910468d37ccd76ba6e37a178a44ca9020762c9e
   compiler-interface-bin.jar: e910468d37ccd76ba6e37a178a44ca9020762c9e
+  compiler-interface-src-0.13.1-ivy.xml: 95595c711d7cc8bfd983ce07b1667e95a3ec5e74
   compiler-interface-src.jar: 67330cedce9ef5e8f4c91f92ed351b4d968bc533
+  compiler-ivy-integration-0.13.1-ivy.xml: 830f599879a4f65310703778c9f59baea918690c
   compiler-ivy-integration.jar: 29658d25d7b5998d5dd5e914a01ffd65217557f6
+  completion-0.13.1-ivy.xml: 0bd2d8c4f70987623d2c1ba30b2c18d041b77e5a
   completion.jar: 5a92ebeda79639051c54f535cdceda25b499eb03
+  control-0.13.1-ivy.xml: 3507f4ce6e2cdb293fe97134030f92b0d2614abd
   control.jar: 3f8a22c8bd1f539beb8c94b0e720904a81b4ae54
+  cross-0.13.1-ivy.xml: dc0ac292d3d8f4d32557e22406fdd770b8b5411b
   cross.jar: 448812380c856b533bf745737cea1e23ce180f27
+  datatype-generator-0.13.1-ivy.xml: bed318b1b629a79a9308fb93b04a6633e46ccbd4
   datatype-generator.jar: 552e3566293913fa0d933ff8a19d4c9ebb9f81c9
   dispatch-http_2.10-0.8.9.jar: 778c1a9b87d02267f630235d0125d9372d500332
+  incremental-compiler-0.13.1-ivy.xml: 241bfa9fdb6f001e0f36623b1c42aab40fde838f
   incremental-compiler.jar: f88851c328d8f905d2875196a232a709e28f40a9
+  interface-0.13.1-ivy.xml: 5ba767d43bf40a2d796c1360e8fd91d10e026222
   interface.jar: 98b1fea2b50f799161a2404eddf4c05f44ad4de1
+  io-0.13.1-ivy.xml: 1b9a84d82ed23c7044e1b7d09ce3e142b028434c
   io.jar: 89807dacad564621dabf0dc3df892f7d9887b7de
+  ivy-0.13.1-ivy.xml: e33f86718c347a4c0ac9f5b65008de8875063d1d
   ivy-2.3.0-rc1.jar: 47fc7fbbfd2558245c166ca5105d60d86eb6699e
   ivy-2.3.0-rc1.pom: 984f3bdb9555944b92de856a72ef338ff7a12eee
   ivy-2.3.0.pom: 95d9048c516346a69d106b3269c7d385115378a9
   ivy.jar: 5156fa53a8114c36a6fb536965980de2184e344a
   ivy.xml: 43ee3740729819d374146e7f9db10e15faa5ad4a
+  launcher-0.13.1-ivy.xml: 952f58ccc92bca483b020ca594b5d04a1d9dc746
+  launcher-interface-0.13.1-ivy.xml: 85752113c0c34ebb4e35a3f2e914144a6a4bf932
   launcher-interface.jar: 5c724f57075a21a9ef0265dbcf5de74140123679
   launcher.jar: 8ba8d664ff752c74f65fb18bfbd7c7a56604ff07
+  logging-0.13.1-ivy.xml: e1bc8d42615e8631667aeccae2e5678843d081b5
   logging.jar: bf3d67522eea2f52777698288385a74c4215e96a
+  main-0.13.1-ivy.xml: a7837f7637384085d63ce36f58d3eca091ae58d4
+  main-settings-0.13.1-ivy.xml: 90c285fb98c77b03034ed5bb82883172861041da
   main-settings.jar: af9b6ec3cd54e274828b2dcc790f9da626e2803d
   main.jar: 6b162406341e114c88d24927e3434fd26562e98f
+  persist-0.13.1-ivy.xml: 1d2e10eea674c53daa55451ae58a669d98122417
   persist.jar: 033861f5e2ca3d762394dfeb7db3188016c1eec7
+  precompiled-2_8_2-0.13.1-ivy.xml: 5a86a5c070a148e877f81562e2f02f7d7d190bf7
+  precompiled-2_9_2-0.13.1-ivy.xml: e2aa94aca8fa54198b30380f5db790d767c30bd4
+  precompiled-2_9_3-0.13.1-ivy.xml: 43ee3740729819d374146e7f9db10e15faa5ad4a
+  process-0.13.1-ivy.xml: 4fe381666e04c3b91ff8da976acfa04c254a47dc
   process.jar: fc7b3ec6fff2037f4a5fcca3b20279d51092ebc2
+  relation-0.13.1-ivy.xml: c45d0a2441d97fdf3fa46c0108eafe5986469986
   relation.jar: a13af7f97bf11d6254b081684107931613598e73
+  run-0.13.1-ivy.xml: a27d0b38e0976dffe4ca8ebdfcd5eb3dd9f9fce1
   run.jar: 036b8e4d57086f3a0508fa684c20efbb42f1ad36
+  sbt-0.13.1-ivy.xml: 5c8f060d3a42c3b372ae593fe80b49c74a8c703f
   sbt-ghpages.jar: bb88b55a0a3568452cdf2dea9258edffb94889e9
   sbt-git.jar: 11ccbe4cde9969b296281cf4e7cda01bed370c6e
+  sbt-launch-0.13.1-ivy.xml: 20356290a19b01dc5d5ddf78b522eb6ddff60d14
   sbt-launch.jar: 3a1718a467ca34380b0a356a2e1bb46813aff240
   sbt-site.jar: ef31449045bf899388e4ba7e92f069f85d8e2264
   sbt.jar: dd1199914c36ef498852aeea0c1f219a07bf1deb
   scalacheck_2.10-1.11.0.jar: 3732926cd76fa32362eba2f7838f4fc8b05ab6c0
+  scripted-framework-0.13.1-ivy.xml: 0492a53b7b65b2043ae063d38e21354cd7dc67b5
   scripted-framework.jar: f0e4802d34fa494f4fd799200c7321fa421cf48f
+  scripted-plugin-0.13.1-ivy.xml: 6be67e795d5475f283f923d43b7c483847b12aa4
   scripted-plugin.jar: ac2d480536b23503590bf3f7a8036821bb79bd0a
+  scripted-sbt-0.13.1-ivy.xml: b28ceb45070c7656e1db4ecef41f7b282507833e
   scripted-sbt.jar: e156de3b77c3e7ccecc9bb466f5f157acbf0b609
   sxr_2.10.jar: 8fe7848056e10c02045fa691768108becbd8a173
+  task-system-0.13.1-ivy.xml: 834026f77b3c95f7a050bcc2141877f2a4396b71
   task-system.jar: eaf334be022bb8d50a89b27c5508c84bd4f72403
+  tasks-0.13.1-ivy.xml: dfd8c622d78016de363dea22d2dc3f04920e292e
   tasks.jar: da641e50a8f883622592b555cdef0b1704f51084
+  test-agent-0.13.1-ivy.xml: 66831fb2665855db7f0d4a5633f3685aed18b45e
   test-agent.jar: 9b00e5945cd5f45da775a47e35387e0597291847
+  testing-0.13.1-ivy.xml: 0f7c3e71b5f2a6dac8f6393596d5b0f5e48bb01e
   testing.jar: 75c1880b87fb133c4d0be7e44181e797ad12874a
+  tracking-0.13.1-ivy.xml: 83bd197312bb38205d4febc0f6f3fb490be3b6ae
   tracking.jar: a8b36ec4d448e900517bcc601582e029ce3cab32
   v0.13.1.tar.gz: f9dfc9f8cb2d3ab1b0a35c34e8f93e2660bd5093
   v0.3.0.tar.gz: 620ec4d63403f95aaed52ae3507e7224cab26bbc
