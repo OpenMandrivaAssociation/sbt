@@ -60,7 +60,7 @@ BuildArch:	noarch
 ExcludeArch:	%{arm}
 
 License:	BSD
-URL:	http://www.scala-sbt.org
+URL:	https://www.scala-sbt.org
 Source0:	https://github.com/sbt/sbt/archive/v%{version}%{sbt_build}.tar.gz
 
 Patch0:	sbt-0.13.1-sbt-scala.patch 
